@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block titulohijas %} {% endblock %}
+    </title>
+    {% load static %}
+    <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet">
+</head>
+<body>
+ <ul id=”button”>
+     <li><a href="{% url 'auto' %}">Mirar autos</a></li>
+     <li><a href="{% url 'chofer' %}">Mirar chofer</a></li>
+ </ul>
+{% block contenidohijas %}
+
+
+{%endblock %}
+
+<footer>
+    <h1>Kenny Lavezzari </h1>
+</footer>
+</body>
+</html>
